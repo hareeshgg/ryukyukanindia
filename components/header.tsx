@@ -1,16 +1,17 @@
 "use client";
 import Link from "next/link";
 import Logo from "../public/ryukyukan_logo.png";
-import { Menu, X } from "lucide-react";
+import { ChevronRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
 const menuItems = [
   { name: "Home", href: "/" },
-  { name: "Branches", href: "/branches" },
-  { name: "Schedule", href: "/schedule" },
-  { name: "Programs", href: "/programs" },
-  { name: "About", href: "/about" },
+  { name: "Programs", href: "#programs" },
+  { name: "Branches", href: "#branches" },
+  { name: "Events", href: "#events" },
+  { name: "Gallery", href: "#gallery" },
+  { name: "About", href: "#about" },
 ];
 
 export const HeroHeader = () => {
@@ -48,14 +49,14 @@ export const HeroHeader = () => {
                 {/* <span className="font-medium text-lg">Ryukyukan India</span> */}
               </Link>
 
-              <button
+              <Button
                 onClick={() => setMenuState(!menuState)}
                 aria-label={menuState == true ? "Close Menu" : "Open Menu"}
-                className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
+                className="relative z-20 -mr-4 -mt-2 block cursor-pointer p-2.5 lg:hidden text-white bg-transparent"
               >
                 <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
                 <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
-              </button>
+              </Button>
 
               <div className="hidden lg:block">
                 <ul className="flex gap-8 text-sm">
@@ -90,14 +91,35 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="outline" size="sm">
+                {/* <Button asChild variant="outline" size="sm">
                   <Link href="#">
                     <span>Login</span>
                   </Link>
+                </Button> */}
+                <Button
+                  asChild
+                  variant="secondary"
+                  size="sm"
+                  className="gap-1 pr-2 shadow-none md:hidden"
+                  onClick={() => {
+                    setMenuState(!menuState);
+                  }}
+                >
+                  <Link href="#enroll">
+                    Book a Free Trial
+                    <ChevronRight className="ml-0 size-3.5! opacity-50" />
+                  </Link>
                 </Button>
-                <Button asChild size="sm" variant="secondary">
-                  <Link href="#link">
-                    <span className="text-nowrap">Sign Up</span>
+
+                <Button
+                  asChild
+                  variant="secondary"
+                  size="sm"
+                  className="gap-1 pr-2 shadow-none hidden md:flex"
+                >
+                  <Link href="#enroll">
+                    Book a Free Trial
+                    <ChevronRight className="ml-0 size-3.5! opacity-50" />
                   </Link>
                 </Button>
               </div>

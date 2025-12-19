@@ -39,7 +39,7 @@ export default function ContentSection() {
               size="sm"
               className="gap-1 pr-1.5"
             >
-              <Link href="#">
+              <Link href="https://visitokinawajapan.com/discover/traditional-culture/birthplace-of-karate/">
                 <span>Learn More</span>
                 <ChevronRight className="size-4" />
               </Link>

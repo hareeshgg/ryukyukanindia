@@ -1,5 +1,14 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
+import { User2 } from "lucide-react";
 
 type Testimonial = {
   name: string;
@@ -14,152 +23,146 @@ const testimonials: Testimonial[] = [
     role: "Parent of Student",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     quote:
-      "Ryukyukan has completely transformed my son's confidence and discipline. The instructors are patient, skilled, and deeply committed to traditional Okinawan values.",
+      "The instructors are patient, skilled, and deeply committed to traditional Okinawan values.",
   },
   {
     name: "Amit Verma",
     role: "IT Professional",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
     quote:
-      "Training here has improved my focus both inside and outside the dojo. The structured approach and attention to technique are unmatched.",
+      "Training here has improved my focus both inside and outside the dojo.",
   },
   {
     name: "Sanjana Deshpande",
     role: "University Student",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    quote:
-      "Kumite sessions helped me become stronger mentally and physically. The guidance I receive here is truly world-class.",
+    quote: "Kumite sessions helped me become stronger mentally and physically.",
   },
   {
     name: "Kenshin Nakamura",
     role: "Martial Arts Enthusiast",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
-    quote:
-      "The dojo maintains the true spirit of Okinawan karate. Every class feels purposeful and deeply connected to tradition.",
-  },
-  {
-    name: "Prakash Singh",
-    role: "Fitness Trainer",
-    image: "https://randomuser.me/api/portraits/men/16.jpg",
-    quote:
-      "Ryukyukan's training methodology builds real strength and precision. The instructors ensure every student trains safely and effectively.",
+    quote: "Every class feels purposeful and deeply connected to tradition.",
   },
   {
     name: "Meera Nair",
     role: "School Teacher",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
     quote:
-      "My daughter has become more disciplined and confident since joining. The environment is encouraging, respectful, and very well-structured.",
+      "My daughter has become more disciplined and confident since joining.",
   },
   {
-    name: "Daniel Lee",
-    role: "College Athlete",
-    image: "https://randomuser.me/api/portraits/men/71.jpg",
-    quote:
-      "Kobudo classes opened a new world of martial arts for me. The weapons training is handled with great expertise and care.",
+    name: "Rohit Sharma",
+    role: "Parent of Student",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    quote: "My son’s confidence and discipline have improved tremendously.",
   },
   {
-    name: "Harshita Bhattacharjee",
-    role: "Corporate Employee",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
-    quote:
-      "The instructors are extremely knowledgeable and dedicated. Every session pushes you to be a better version of yourself.",
+    name: "Amit Verma",
+    role: "IT Professional",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    quote: "Training here sharpened my focus and self-control.",
+  },
+  {
+    name: "Sanjana Deshpande",
+    role: "University Student",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    quote: "Kumite sessions made me mentally and physically stronger.",
+  },
+  {
+    name: "Kenshin Nakamura",
+    role: "Martial Arts Enthusiast",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    quote: "Authentic Okinawan karate taught with deep respect.",
+  },
+  {
+    name: "Meera Nair",
+    role: "School Teacher",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    quote: "My daughter is more confident and disciplined now.",
   },
   {
     name: "Akshay Patil",
     role: "Engineer",
     image: "https://randomuser.me/api/portraits/men/36.jpg",
-    quote:
-      "I joined to stay fit, but I stayed because of the discipline and clarity karate brought into my life. Highly recommended.",
+    quote: "Karate here brought clarity and consistency to my life.",
   },
   {
-    name: "Sophia Fernandez",
+    name: "Sophia Fernandes",
     role: "High School Student",
     image: "https://randomuser.me/api/portraits/women/31.jpg",
-    quote:
-      "Kumite training helped me overcome fear and build real confidence. The dojo atmosphere is positive and motivating.",
+    quote: "The training helped me overcome fear and hesitation.",
   },
   {
     name: "Vikram Chauhan",
     role: "Business Owner",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
-    quote:
-      "Ryukyukan stands out for its authentic training and disciplined approach. The teaching quality is exceptional.",
-  },
-  {
-    name: "Elena Park",
-    role: "Artist & Martial Arts Student",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
-    quote:
-      "Kobudo training enhanced my understanding of martial arts as a whole. The precision and cultural depth taught here are incredible.",
+    quote: "Disciplined training with exceptional instructors.",
   },
 ];
 
-const chunkArray = (
-  array: Testimonial[],
-  chunkSize: number
-): Testimonial[][] => {
-  const result: Testimonial[][] = [];
-  for (let i = 0; i < array.length; i += chunkSize) {
-    result.push(array.slice(i, i + chunkSize));
-  }
-  return result;
-};
-
-const testimonialChunks = chunkArray(
-  testimonials,
-  Math.ceil(testimonials.length / 3)
-);
-
-export default function Testimonial() {
+export default function TestimonialCarousel() {
   return (
-    <section>
-      <div className="py-16 md:py-32">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold">Voices of Our Dojo</h2>
-            <p className="mt-6">
-              Real stories from students and families who have grown through our
-              authentic Okinawan martial arts training.
-            </p>
-          </div>
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-12 lg:grid-cols-3">
-            {testimonialChunks.map((chunk, chunkIndex) => (
-              <div key={chunkIndex} className="space-y-3">
-                {chunk.map(({ name, role, quote, image }, index) => (
-                  <Card key={index}>
-                    <CardContent className="grid grid-cols-[auto_1fr] gap-3 pt-6">
-                      <Avatar className="size-9">
-                        <AvatarImage
-                          alt={name}
-                          src={image}
-                          loading="lazy"
-                          width="120"
-                          height="120"
-                        />
-                        <AvatarFallback>ST</AvatarFallback>
-                      </Avatar>
-
-                      <div>
-                        <h3 className="font-medium">{name}</h3>
-
-                        <span className="text-muted-foreground block text-sm tracking-wide">
-                          {role}
-                        </span>
-
-                        <blockquote className="mt-3">
-                          <p className="text-gray-200 dark:text-gray-300">
-                            {quote}
-                          </p>
-                        </blockquote>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            ))}
-          </div>
+    <section className="py-16 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        {/* Heading */}
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold">Voices of Our Dojo</h2>
+          <p className="mt-6 text-muted-foreground">
+            Real stories from students and families who have grown through our
+            authentic Okinawan martial arts training.
+          </p>
         </div>
+
+        {/* Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-12"
+        >
+          <Swiper
+            className="testimonial-swiper"
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            spaceBetween={16}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {testimonials.map((t, index) => (
+              <SwiperSlide key={index}>
+                <Card className="h-55">
+                  <CardContent className="grid grid-cols-[auto_1fr] gap-4 p-6">
+                    <Avatar className="size-10">
+                      <AvatarImage alt={t.name} />
+                      <AvatarFallback>
+                        {t.name.slice(0, 2).toUpperCase()}
+                      </AvatarFallback>
+                    </Avatar>
+
+                    <div>
+                      <h3 className="font-medium">{t.name}</h3>
+                      <span className="text-muted-foreground text-sm">
+                        {t.role}
+                      </span>
+
+                      <blockquote className="mt-3">
+                        <p className="text-sm text-muted-foreground">
+                          “{t.quote}”
+                        </p>
+                      </blockquote>
+                    </div>
+                  </CardContent>
+                </Card>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
       </div>
     </section>
   );

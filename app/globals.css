@@ -146,6 +146,17 @@
   }
 }
 
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
 }
@@ -153,9 +164,21 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 p {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.testimonial-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  background-color: #9ca3af;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: var(--secondary);
 }

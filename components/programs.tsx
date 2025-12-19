@@ -27,7 +27,7 @@ export default function Programs() {
   ];
   return (
     <section>
-      <div className="py-32">
+      <div className="py-32" id="programs">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
             <h2 className="text-balance text-3xl font-semibold md:text-4xl">
@@ -39,7 +39,7 @@ export default function Programs() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-3 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map((card, index) => (
               <IntegrationCard
                 key={card.title + index}
