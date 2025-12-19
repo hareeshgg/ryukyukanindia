@@ -107,7 +107,9 @@ export default function TestimonialCarousel() {
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-3xl font-semibold">Voices of Our Dojo</h2>
+          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
+            Ryukyukan <span className="text-secondary">Experiences</span>
+          </h2>
           <p className="mt-6 text-muted-foreground">
             Real stories from students and families who have grown through our
             authentic Okinawan martial arts training.
@@ -146,7 +148,7 @@ export default function TestimonialCarousel() {
                     </Avatar>
 
                     <div>
-                      <h3 className="font-medium">{t.name}</h3>
+                      <p className="font-bold">{t.name}</p>
                       <span className="text-muted-foreground text-sm">
                         {t.role}
                       </span>

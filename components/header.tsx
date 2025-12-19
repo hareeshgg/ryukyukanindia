@@ -7,11 +7,11 @@ import React from "react";
 
 const menuItems = [
   { name: "Home", href: "/" },
-  { name: "Programs", href: "#programs" },
-  { name: "Branches", href: "#branches" },
-  { name: "Events", href: "#events" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "About", href: "#about" },
+  { name: "Programs", href: "/programs" },
+  { name: "Branches", href: "/branches" },
+  // { name: "Events", href: "/events" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "About", href: "/about" },
 ];
 
 export const HeroHeader = () => {

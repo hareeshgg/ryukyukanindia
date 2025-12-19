@@ -182,3 +182,7 @@ p {
 .testimonial-swiper .swiper-pagination-bullet-active {
   background-color: var(--secondary);
 }
+
+.inter {
+  font-family: "Inter", sans-serif;
+}

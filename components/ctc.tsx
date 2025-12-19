@@ -15,8 +15,8 @@ export default function CallToAction() {
     <section className="py-16 md:py-32" id="enroll">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
-          <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-            Visit Our<span className="text-accent"> DOJO!</span>
+          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
+            Visit Our<span className="text-accent"> DOJO</span>
           </h2>
           <p className="mt-4">
             Start your journey today. Discipline begins with a single step.

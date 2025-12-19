@@ -38,7 +38,7 @@ export default function TeamSection() {
     <section className="py-16 md:py-32 dark:bg-transparent">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-semibold md:text-4xl">
+          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
             Our Instructors
           </h2>
 
@@ -61,9 +61,9 @@ export default function TeamSection() {
                 />
                 <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                   <div className="flex justify-between">
-                    <h3 className="text-xl font-medium transition-all duration-500 group-hover:tracking-wider">
+                    <p className="text-xl font-bold transition-all duration-500 group-hover:tracking-wider">
                       {member.name}
-                    </h3>
+                    </p>
                     <span className="text-xs">_0{index + 1}</span>
                   </div>
                   <div className="mt-1 flex items-center justify-between">

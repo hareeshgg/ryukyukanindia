@@ -30,7 +30,7 @@ export default function Programs() {
       <div className="py-32" id="programs">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
-            <h2 className="text-balance text-3xl font-semibold md:text-4xl">
+            <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
               Our Core Arts
             </h2>
             <p className="text-muted-foreground mt-6">
@@ -79,7 +79,7 @@ const IntegrationCard = ({
         <div className="*:h-96 *:w-full">{children}</div>
 
         <div className="space-y-2 py-6">
-          <h3 className="text-base font-medium">{title}</h3>
+          <h3 className="inter text-base font-bold">{title}</h3>
           <p className="text-muted-foreground line-clamp-2 text-sm">
             {description}
           </p>

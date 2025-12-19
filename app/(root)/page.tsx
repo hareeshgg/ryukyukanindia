@@ -1,6 +1,7 @@
 "use client";
 import ContentSection from "@/components/content1";
 import CallToAction from "@/components/ctc";
+import FAQs from "@/components/faq";
 import HeroSection from "@/components/hero-section";
 import Programs from "@/components/programs";
 import Schedule from "@/components/schedule";
@@ -12,11 +13,9 @@ const Home = () => {
     <>
       <HeroSection />
       <ContentSection />
-      <Programs />
-      <Schedule />
-      <TeamSection />
       <Testimonial />
       <CallToAction />
+      <FAQs />
     </>
   );
 };

@@ -4,11 +4,12 @@ import Logo from "../public/ryukyukan_logo.png";
 import Link from "next/link";
 
 const links = [
-  { name: "Home", href: "#link" },
-  { name: "Branches", href: "#link" },
-  { name: "Schedule", href: "#link" },
-  { name: "Programs", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Home", href: "/" },
+  { name: "Programs", href: "/programs" },
+  { name: "Branches", href: "/branches" },
+  // { name: "Events", href: "/events" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "About", href: "/about" },
 ];
 
 export default function FooterSection() {
@@ -29,7 +30,7 @@ export default function FooterSection() {
             <Link
               key={index}
               href={link.href}
-              className="text-muted-foreground hover:text-primary block duration-150"
+              className="text-muted-foreground hover:text-white block duration-150"
             >
               <span>{link.name}</span>
             </Link>

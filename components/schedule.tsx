@@ -4,21 +4,24 @@ import Image from "next/image";
 export default function Schedule() {
   const dojos = [
     {
-      name: "Holy Cross Convent School, Mira Road",
+      name: "Holy Cross Convent School",
+      location: "Mira Road, Thane",
       description: "Our first Ryukyukan dojo in India",
       days: ["Tuesday", "Saturday", "Sunday"],
       time: ["6:30 PM - 7:30 PM", "5:00 PM - 6:30 PM", "5:00 PM - 6:30 PM"],
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.9345360814855!2d72.86307357519253!3d19.285212845371316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b04678f27b17%3A0xbfaeb0666af9e77d!2sHoly%20Cross%20Convent%20School!5e0!3m2!1sen!2sin!4v1766066301286!5m2!1sen!2sin",
     },
     {
-      name: "PG Vora High School, Mira Road",
+      name: "PG Vora High School",
+      location: "Mira Road, Thane",
       description: "Beginner friendly traditional dojo",
       days: ["Tuesday", "Saturday", "Sunday"],
       time: ["5:00 PM - 6:00 PM", "7:00 PM - 8:00 PM", "9:00 AM - 10:00 AM"],
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.7666237974173!2d72.8571251349182!3d19.276582000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b05188579fbb%3A0x9bfc5294c525ffef!2sP%20G%20Vora%20High%20School!5e0!3m2!1sen!2sin!4v1766065862558!5m2!1sen!2sin",
     },
     {
-      name: "RBK International School, Bhayandar",
+      name: "RBK International School",
+      location: "Bhayandar, Thane",
       description: "Advanced karate and kumite training",
       days: ["Saturday", "Sunday"],
       time: ["5:00 PM - 6:30 PM", "5:00 PM - 6:30 PM"],
@@ -26,7 +29,8 @@ export default function Schedule() {
     },
 
     {
-      name: "RBK International School, Chembur",
+      name: "RBK International School",
+      location: "Chembur, Mumbai",
       description: "Advanced karate and kumite training",
       days: ["Saturday", "Sunday"],
       time: ["4:00 PM - 5:30 PM", "4:00 PM - 5:30 PM"],
@@ -38,14 +42,13 @@ export default function Schedule() {
     <section className="py-16 md:py-32" id="branches">
       <div className="mx-auto max-w-5xl space-y-16 px-6">
         <div className="text-center">
-          <h2 className="text-balance text-3xl font-semibold md:text-4xl">
+          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
             Our Branches
           </h2>
 
           <p className="text-muted-foreground mt-6">
-            Highly trained and dedicated, our instructors uphold the true spirit
-            of Okinawan karate through disciplined teaching and authentic
-            practice.
+            Every branch carries forward the legacy of Ryukyukan through
+            dedicated instruction and disciplined practice.
           </p>
         </div>
         {dojos.map((dojo, index) => (
@@ -55,10 +58,13 @@ export default function Schedule() {
           >
             {/* Text */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-medium">
-                {dojo.name.split(",")[0]},<br />
-                {dojo.name.split(",")[1]}
-              </h2>
+              <div className="space-y-0">
+                <h3 className="inter text-3xl font-bold">
+                  {dojo.name}
+                  <br />
+                </h3>
+                <p className="font-semibold">{dojo.location}</p>
+              </div>
 
               <p className="text-muted-foreground">{dojo.description}</p>
 
@@ -66,7 +72,7 @@ export default function Schedule() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <Calendar className="size-4" />
-                    <h3 className="text-md font-medium">Days</h3>
+                    <p className="text-md font-medium">Days</p>
                   </div>
                   <ul className="text-sm text-muted-foreground">
                     {dojo.days.map((day) => (
@@ -78,7 +84,7 @@ export default function Schedule() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <Clock className="size-4" />
-                    <h3 className="text-md font-medium">Time</h3>
+                    <p className="text-md font-medium">Time</p>
                   </div>
                   <ul className="text-sm text-muted-foreground">
                     {dojo.time.map((t, i) => (

@@ -12,33 +12,53 @@ export default function FAQs() {
   const faqItems = [
     {
       id: "item-1",
-      question: "How long does shipping take?",
+      question: "What style of martial art do you teach?",
       answer:
-        "Standard shipping takes 3-5 business days, depending on your location. Express shipping options are available at checkout for 1-2 business day delivery.",
+        "We teach traditional Okinawan Shorin-Ryu Karate under the Ryukyukan lineage, focusing on discipline, technique, self-defense, and character development.",
+    },
+    {
+      id: "item-7",
+      question: "Are trial classes available?",
+      answer:
+        "Yes. We encourage new students to attend a trial class to experience our training environment before enrolling.",
+    },
+    {
+      id: "item-9",
+      question: "Is karate training safe for children?",
+      answer:
+        "Safety is our top priority. All classes are supervised by qualified instructors, with age-appropriate and controlled training methods.",
     },
     {
       id: "item-2",
-      question: "What payment methods do you accept?",
+      question: "What is the minimum age to join?",
       answer:
-        "We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. For enterprise customers, we also offer invoicing options.",
+        "Children can begin training from the age of 4. Each student is assessed to ensure they are placed in the most suitable program.",
     },
-    {
-      id: "item-3",
-      question: "Can I change or cancel my order?",
-      answer:
-        "You can modify or cancel your order within 1 hour of placing it. After this window, please contact our customer support team who will assist you with any changes.",
-    },
+
     {
       id: "item-4",
-      question: "Do you ship internationally?",
+      question: "How long are the training sessions?",
       answer:
-        "Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days. Additional customs fees may apply depending on your country's import regulations.",
+        "Most classes are 60 minutes long, depending on the age group and training program.",
     },
     {
       id: "item-5",
-      question: "What is your return policy?",
+      question: "What equipment or uniform is required?",
       answer:
-        "We offer a 30-day return policy for most items. Products must be in original condition with tags attached. Some specialty items may have different return terms, which will be noted on the product page.",
+        "Students are required to wear a karate uniform (gi) which is provided by the dojo. Basic protective equipment may be needed for kumite training and can be guided by our instructors.",
+    },
+    {
+      id: "item-6",
+      question: "Do you conduct belt examinations?",
+      answer:
+        "Yes. Belt promotions are conducted periodically based on skill level, attendance, discipline, and overall progress.",
+    },
+
+    {
+      id: "item-8",
+      question: "Do you train students for competitions?",
+      answer:
+        "Yes. Interested and eligible students receive specialized training for kata, kumite, and other competitive events.",
     },
   ];
 
@@ -47,7 +67,7 @@ export default function FAQs() {
       <div className="mx-auto max-w-5xl px-4 md:px-6">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-secondary">Questions</span>
           </h2>
           <p className="text-muted-foreground mt-4 text-balance">
             Discover quick and comprehensive answers to common questions about
@@ -68,7 +88,7 @@ export default function FAQs() {
                   className="data-[state=open]:bg-card dark:data-[state=open]:bg-muted peer rounded-xl border-none px-7 py-1 data-[state=open]:border-none data-[state=open]:shadow-sm"
                 >
                   <AccordionTrigger className="cursor-pointer text-base hover:no-underline">
-                    {item.question}
+                    <h3 className="inter font-bold">{item.question}</h3>
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-base">{item.answer}</p>
@@ -79,10 +99,13 @@ export default function FAQs() {
             ))}
           </Accordion>
 
-          <p className="text-muted-foreground mt-6 px-8">
-            Can't find what you're looking for? Contact our{" "}
-            <Link href="#" className="text-primary font-medium hover:underline">
-              customer support team
+          <p className="text-center text-muted-foreground mt-6 px-8">
+            Can't find what you're looking for?{" "}
+            <Link
+              href="tel:+919967507211"
+              className="text-white font-medium hover:underline"
+            >
+              Click to contact us.
             </Link>
           </p>
         </div>

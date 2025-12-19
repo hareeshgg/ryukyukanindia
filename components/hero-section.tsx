@@ -35,9 +35,9 @@ export default function HeroSection() {
                   asChild
                   size="lg"
                   variant="ghost"
-                  className="px-5 text-base sm:border-2"
+                  className="px-5 text-base border-2"
                 >
-                  <Link href="#link">
+                  <Link href="/branches">
                     <span className="text-nowrap">See Our Classes</span>
                   </Link>
                 </Button>
