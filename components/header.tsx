@@ -99,8 +99,8 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   variant="secondary"
-                  size="sm"
-                  className="gap-1 pr-2 shadow-none md:hidden"
+                  size="lg"
+                  className="px-5 text-base shadow-none md:hidden"
                   onClick={() => {
                     setMenuState(!menuState);
                   }}
@@ -114,7 +114,7 @@ export const HeroHeader = () => {
                 <Button
                   asChild
                   variant="secondary"
-                  size="sm"
+                  size="lg"
                   className="gap-1 pr-2 shadow-none hidden md:flex"
                 >
                   <Link href="#enroll">
