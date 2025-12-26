@@ -117,7 +117,7 @@ export const HeroHeader = () => {
                   size="lg"
                   className="gap-1 pr-2 shadow-none hidden md:flex"
                 >
-                  <Link href="#enroll">
+                  <Link href="/#enroll">
                     Book a Free Trial
                     <ChevronRight className="ml-0 size-3.5! opacity-50" />
                   </Link>
