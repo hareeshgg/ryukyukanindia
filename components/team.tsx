@@ -2,6 +2,12 @@ import Link from "next/link";
 
 const members = [
   {
+    name: "Koei Nohara",
+    role: "Hanshi - President of Ryukyukan",
+    avatar: "/team/hanshi.jpg",
+    link: "#",
+  },
+  {
     name: "Padma Bhushan Mishra",
     role: "Renshi - Technical Director, India",
     avatar: "/team/renshi.jpg",
@@ -35,7 +41,7 @@ const members = [
 
 export default function TeamSection() {
   return (
-    <section className="py-16 md:py-32 dark:bg-transparent">
+    <section className="pb-16 pt-8 dark:bg-transparent">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">

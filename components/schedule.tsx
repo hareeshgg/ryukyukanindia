@@ -39,7 +39,7 @@ export default function Schedule() {
   ];
 
   return (
-    <section className="py-16 md:py-32" id="branches">
+    <section className="pb-16 pt-8" id="branches">
       <div className="mx-auto max-w-5xl space-y-16 px-6">
         <div className="text-center">
           <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">

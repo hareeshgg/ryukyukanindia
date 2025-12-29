@@ -27,7 +27,7 @@ export default function Programs() {
   ];
   return (
     <section>
-      <div className="py-32" id="programs">
+      <div className="pb-16 pt-8" id="programs">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
             <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-import logo from "../public/herosection.png";
+import logo from "../public/hero-section.jpeg";
 
 export default function HeroSection() {
   return (
@@ -55,7 +55,7 @@ export default function HeroSection() {
             </div>
           </div>
           <img
-            className="-z-50 ml-auto h-200 object-cover absolute inset-0 size-full opacity-25 blur-[2px]"
+            className="-z-50 ml-auto h-200 xl:h-auto object-cover absolute inset-0 size-full opacity-25 blur-[2px]"
             src={logo.src}
             alt="Abstract Object"
             height="4000"
