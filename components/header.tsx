@@ -105,7 +105,7 @@ export const HeroHeader = () => {
                     setMenuState(!menuState);
                   }}
                 >
-                  <Link href="#enroll">
+                  <Link href="/#enroll">
                     Book a Free Trial
                     <ChevronRight className="ml-0 size-3.5! opacity-50" />
                   </Link>
@@ -116,6 +116,9 @@ export const HeroHeader = () => {
                   variant="secondary"
                   size="lg"
                   className="gap-1 pr-2 shadow-none hidden md:flex"
+                  onClick={() => {
+                    setMenuState(!menuState);
+                  }}
                 >
                   <Link href="/#enroll">
                     Book a Free Trial
