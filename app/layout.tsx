@@ -43,7 +43,6 @@ export default function RootLayout({
       >
         <Preloader />
         {children}
-
         <Toaster />
       </body>
     </html>

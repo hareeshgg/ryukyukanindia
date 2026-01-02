@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 import logo from "../public/hero-section.jpeg";
+import { AnimatedStat } from "./animated-stat";
 
 export default function HeroSection() {
   return (
@@ -43,14 +44,19 @@ export default function HeroSection() {
                 </Button>
               </div>
             </div>
-            <div className="flex items-center justify-around h-56 w-full lg:items-start lg:justify-start lg:absolute lg:h-max lg:w-2/3 lg:top-64 lg:-right-70 lg:gap-18">
+            <div className="flex items-center justify-around h-56 w-full lg:items-start lg:justify-start lg:absolute lg:h-max lg:w-2/3 lg:top-26 lg:-right-62 lg:gap-18 xl:top-56 xl:-right-70 xl:gap-18">
               <div>
-                <h1 className="text-7xl font-medium lg:text-8xl">10k+</h1>
-                <p className="font-medium pl-2">Students</p>
+                <h1>
+                  <AnimatedStat value={1000} suffix="+" />
+                  <p className="font-medium pl-2 lg:pl-4 mt-[-20]">Students</p>
+                </h1>
               </div>
+
               <div>
-                <h1 className="text-7xl font-medium lg:text-8xl">30+</h1>
-                <p className="font-medium">Years experience</p>
+                <h1>
+                  <AnimatedStat value={30} suffix="+" />
+                </h1>
+                <p className="font-medium mt-[-20]">Years experience</p>
               </div>
             </div>
           </div>

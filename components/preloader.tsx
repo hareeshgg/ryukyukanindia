@@ -1,11 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Preloader() {
   const [hidden, setHidden] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
+    const isHome = pathname === "/";
+    const hasVisited = localStorage.getItem("hasVisitedHome");
+
+    // CASE 1: First visit to homepage → minimum 3 seconds
+    if (isHome && !hasVisited) {
+      localStorage.setItem("hasVisitedHome", "true");
+
+      const timer = setTimeout(() => {
+        setHidden(true);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+
+    // CASE 2: Other pages OR returning visitor → hide when ready
     if (document.readyState === "complete") {
       setHidden(true);
       return;
@@ -16,9 +33,8 @@ export default function Preloader() {
     };
 
     window.addEventListener("load", handleLoad);
-
     return () => window.removeEventListener("load", handleLoad);
-  }, []);
+  }, [pathname]);
 
   if (hidden) return null;
 
