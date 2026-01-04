@@ -9,6 +9,7 @@ const events = [
     name: "All India Kobudo Championship",
     description:
       "4th All India Kobudo Championship organized by the Okinawan Kobudo Association.",
+    date: "9th November, 2025",
     images: [
       "https://images.unsplash.com/photo-1530417838433-4b24dd3f72d4?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1529566193698-bc394165d541?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGthcmF0ZXxlbnwwfHwwfHx8MA%3D%3D",
@@ -16,9 +17,21 @@ const events = [
     ],
   },
   {
-    name: "National Karate Training Camp",
+    name: "All India Open Shuri Championship",
     description:
       "An intensive national-level training camp focusing on kata and kumite.",
+    date: "26th January, 2025",
+    images: [
+      "https://plus.unsplash.com/premium_photo-1663126473034-a3367fd5598e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1555597408-26bc8e548a46?q=80&w=1223&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1514050566906-8d077bae7046?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ],
+  },
+  {
+    name: "2nd State Kobudo Championship",
+    description:
+      "An intensive national-level training camp focusing on kata and kumite.",
+    date: "25th August, 2024",
     images: [
       "https://plus.unsplash.com/premium_photo-1663126473034-a3367fd5598e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1555597408-26bc8e548a46?q=80&w=1223&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
