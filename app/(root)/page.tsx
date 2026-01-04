@@ -1,4 +1,5 @@
 "use client";
+import ContactSection from "@/components/contact-section";
 import ContentSection from "@/components/content1";
 import CallToAction from "@/components/ctc";
 import FAQs from "@/components/faq";
@@ -13,6 +14,7 @@ const Home = () => {
       <Testimonial />
       <CallToAction />
       <FAQs />
+      {/* <ContactSection /> */}
     </>
   );
 };

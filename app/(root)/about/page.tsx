@@ -60,6 +60,32 @@ const page = () => {
         </div>
       </section>
 
+      <section className="py-16 md:py-32">
+        <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
+          <div className="mx-auto max-w-xl space-y-6  md:space-y-10">
+            <h2 className="text-balance text-4xl text-center font-medium lg:text-5xl">
+              Our Philosophy
+            </h2>
+            <p className="text-justify">
+              We preserve the traditions of Okinawan Karate while promoting
+              personal growth and discipline. Our art develops mind, body, and
+              spirit through respect, perseverance, and humility. Karate is not
+              about aggression, but about self-control, confidence, and harmony.
+              We aim to build strong individuals and a global community of
+              friendship and respect.
+            </p>
+          </div>
+          <img
+            className="rounded-(--radius)"
+            src="./hero_photo.jpg"
+            alt="team image"
+            height=""
+            width=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       <TeamSection />
     </>
   );

@@ -124,6 +124,14 @@ export default function FooterSection() {
             </svg>
           </Link>
         </div>
+        {/* <div className="grid gap-1 mb-8   divide-y *:text-right *:not-first:text-left *:text-muted-foreground md:grid-cols-2 md:gap-1 md:divide-x md:divide-y-0">
+          <div className="space-y-4 px-4">
+            <p>+91 81692 06488</p>
+          </div>
+          <div className="space-y-4 px-4">
+            <p>+91 99675 07211</p>
+          </div>
+        </div> */}
         <span className="text-muted-foreground block text-center text-sm">
           {" "}
           © {new Date().getFullYear()} Ryukyukan, All rights reserved
