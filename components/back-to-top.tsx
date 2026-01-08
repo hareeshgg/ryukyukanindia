@@ -18,7 +18,7 @@ const UpButton = () => {
   }, []);
   return (
     isVisible && (
-      <button className="rounded-full fixed bottom-4 right-4 bg-card p-2">
+      <button className="rounded-full fixed bottom-4 right-4 bg-card p-2 z-999">
         <Link href="#top">
           <ChevronUp size={28} />
         </Link>

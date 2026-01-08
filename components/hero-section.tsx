@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import logo from "../public/hero-section.jpeg";
 import { AnimatedStat } from "./animated-stat";
+import LogoCloud from "./branch-cloud";
 
 export default function HeroSection() {
   return (
@@ -69,6 +70,7 @@ export default function HeroSection() {
           />
         </div>
       </section>
+      <LogoCloud />
     </main>
   );
 }

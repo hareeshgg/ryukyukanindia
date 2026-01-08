@@ -6,36 +6,53 @@ import { ImageModal } from "@/components/ImageModal";
 
 const events = [
   {
-    name: "All India Kobudo Championship",
+    name: "All India Shuri Championship 2025",
     description:
-      "4th All India Kobudo Championship organized by the Okinawan Kobudo Association.",
+      "A glimpse of the Kobudo Championship organized by the Okinawan Kobudo Association.",
     date: "9th November, 2025",
     images: [
-      "https://images.unsplash.com/photo-1530417838433-4b24dd3f72d4?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1529566193698-bc394165d541?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGthcmF0ZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1601878458406-a80adc9b3e61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGthcmF0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      "sh_1_rvjnjy",
+      "sh_8_w2njaw",
+      "sh_4_yyj06l",
+      "sh_3_wt54pu",
+      "sh_2_mfdm4i",
+      "sh_5_co94u3",
+      "sh_7_xaeku8",
+      "sh_6_kcskke",
     ],
   },
   {
-    name: "All India Open Shuri Championship",
-    description:
-      "An intensive national-level training camp focusing on kata and kumite.",
-    date: "26th January, 2025",
-    images: [
-      "https://plus.unsplash.com/premium_photo-1663126473034-a3367fd5598e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1555597408-26bc8e548a46?q=80&w=1223&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1514050566906-8d077bae7046?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ],
+    name: "Yonabaru Dojo, Japan",
+    description: "",
+    date: "26th September, 2023",
+    images: ["yonabaru_dojo_grihxg"],
   },
   {
-    name: "2nd State Kobudo Championship",
+    name: "Ryukyukan Headquarter, Japan",
     description:
-      "An intensive national-level training camp focusing on kata and kumite.",
-    date: "25th August, 2024",
+      "A memorable training visit to the Ryukyukan Headquarters, where our Renshi trained under Hanshi alongside other fellow practitioners",
+    date: "26th September, 2023",
+    images: ["hd_1_v3p0gy", "hd_3_q18rnw"],
+  },
+
+  {
+    name: "Ryukyukan Seminar & Training Camp",
+    description:
+      "A special training seminar conducted at our dojo during the visit of Hanshi from Japan",
+    date: "26th September, 2023",
     images: [
-      "https://plus.unsplash.com/premium_photo-1663126473034-a3367fd5598e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1555597408-26bc8e548a46?q=80&w=1223&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1514050566906-8d077bae7046?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rs_17_o7wlrv",
+      "rs_2_bpyc7g",
+      "rs_7_hyxovh",
+      "rs_6_ouuhrp",
+      "rs_3_p2gv8h",
+      "rs_12_h6wwey",
+      "rs_4_gceqoc",
+      "rs_14_rk609q",
+      "rs_19_owshei",
+      "rs_15_lijh9q",
+      "rs_11_qdpnab",
+      "rs_1_dzxmgw",
     ],
   },
 ];
