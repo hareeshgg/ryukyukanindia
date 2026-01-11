@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-import logo from "../public/hero-section.jpeg";
 import { AnimatedStat } from "./animated-stat";
 import LogoCloud from "./branch-cloud";
 
@@ -63,7 +62,7 @@ export default function HeroSection() {
           </div>
           <img
             className="-z-50 ml-auto h-200 xl:h-auto object-cover absolute inset-0 size-full opacity-25 blur-[2px]"
-            src={logo.src}
+            src="/home/hero-section"
             alt="Abstract Object"
             height="4000"
             width="3000"

@@ -5,7 +5,7 @@ const page = () => {
     <>
       <section className="pb-16 pt-8 dark:bg-transparent">
         <div className="mx-auto max-w-5xl px-6">
-          <img src="/about.jpeg" className="w-full h-auto rounded-lg" />
+          <img src="/about/about.jpeg" className="w-full h-auto rounded-lg" />
           <h2 className="text-balance text-center text-3xl font-bold md:text-4xl lg:text-5xl pt-8">
             About Us
           </h2>
@@ -25,7 +25,7 @@ const page = () => {
                   powerful international fighting teams.
                 </p>
                 <p>
-                  Ryukyukan is led by Koei Nohara, Hanshi (9th Degree Black
+                  Ryukyukan is led by Koei Nohara, Hanshi (10th Degree Black
                   Belt), a highly respected Okinawan Shorinryu karate master.
                   The organization maintains a direct lineage to original
                   Okinawan karate through two legendary figures: Chosin Chibana
@@ -53,7 +53,7 @@ const page = () => {
               </div>
             </div>
             <img
-              src="/about-hr.jpeg"
+              src="/about/about-hr.jpeg"
               className="size-full rounded-md object-cover object-top"
             />
           </div>
@@ -77,7 +77,7 @@ const page = () => {
           </div>
           <img
             className="rounded-(--radius)"
-            src="./hero_photo.jpg"
+            src="/about/hero_photo.jpg"
             alt="team image"
             height=""
             width=""

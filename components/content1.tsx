@@ -15,7 +15,7 @@ export default function ContentSection() {
         </div>
         <img
           className="rounded-(--radius)"
-          src="./shuri.jpg"
+          src="/home/shuri.jpg"
           alt="team image"
           height=""
           width=""

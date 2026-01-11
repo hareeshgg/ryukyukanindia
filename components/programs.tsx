@@ -16,13 +16,13 @@ export default function Programs() {
       title: "Kumite",
       description:
         "Sparring practice where karate practitioners apply techniques dynamically against resisting opponents.",
-      img: "/programs/kata.jpg",
+      img: "/programs/kumite.png",
     },
     {
       title: " Kobudo",
       description:
         "Okinawan weapon art preserving traditional techniques using bo, sai, and tonfa.",
-      img: "/programs/kata.jpg",
+      img: "/programs/kobudo.png",
     },
   ];
   return (

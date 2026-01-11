@@ -11,11 +11,10 @@ const events = [
       "A glimpse of the Kobudo Championship organized by the Okinawan Kobudo Association.",
     date: "9th November, 2025",
     images: [
-      "sh_1_rvjnjy",
       "sh_8_w2njaw",
       "sh_4_yyj06l",
       "sh_3_wt54pu",
-      "sh_2_mfdm4i",
+
       "sh_5_co94u3",
       "sh_7_xaeku8",
       "sh_6_kcskke",
