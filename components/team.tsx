@@ -61,7 +61,7 @@ export default function TeamSection() {
                 <img
                   className="h-96 w-full rounded-md object-cover object-top transition-all duration-500 group-hover:h-90 group-hover:rounded-xl"
                   src={member.avatar}
-                  alt="team member"
+                  alt={`${member.name} - Ryukyukan instructor ${member.role}`}
                   width="826"
                   height="1239"
                 />

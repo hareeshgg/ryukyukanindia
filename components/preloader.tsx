@@ -41,7 +41,7 @@ export default function Preloader() {
   return (
     <div className="fixed inset-0 z-999 flex items-center justify-center bg-background">
       <img
-        src="/ryukyukan_logo.png"
+        src="/logo.png"
         alt="Ryukyukan Logo"
         className="w-28 animate-pulse transition-opacity duration-1000"
       />

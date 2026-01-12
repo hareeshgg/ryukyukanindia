@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Logo from "../public/ryukyukan_logo.png";
+import Logo from "../public/logo.png";
 import { ChevronRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";

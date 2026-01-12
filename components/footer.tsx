@@ -1,6 +1,6 @@
 // import { Logo } from "@/components/logo";
 import Image from "next/image";
-import Logo from "../public/ryukyukan_logo.png";
+import Logo from "../public/logo.png";
 import Link from "next/link";
 
 const links = [
@@ -38,28 +38,7 @@ export default function FooterSection() {
         </div>
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
           <Link
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="X/Twitter"
-            className="text-muted-foreground hover:text-secondary block"
-          >
-            <svg
-              className="size-6"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"
-              ></path>
-            </svg>
-          </Link>
-
-          <Link
-            href="#"
+            href="https://www.facebook.com/share/1CfdJHoLFP/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -78,33 +57,9 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+
           <Link
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Threads"
-            className="text-muted-foreground hover:text-secondary block"
-          >
-            <svg
-              className="size-6"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M19.25 8.505c-1.577-5.867-7-5.5-7-5.5s-7.5-.5-7.5 8.995s7.5 8.996 7.5 8.996s4.458.296 6.5-3.918c.667-1.858.5-5.573-6-5.573c0 0-3 0-3 2.5c0 .976 1 2 2.5 2s3.171-1.027 3.5-3c1-6-4.5-6.5-6-4"
-                color="currentColor"
-              ></path>
-            </svg>
-          </Link>
-          <Link
-            href="#"
+            href="https://www.instagram.com/ryukyukanindia?igsh=MWp3eTRqa2w1OHc3aA=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -124,14 +79,25 @@ export default function FooterSection() {
             </svg>
           </Link>
         </div>
-        {/* <div className="grid gap-1 mb-8   divide-y *:text-right *:not-first:text-left *:text-muted-foreground md:grid-cols-2 md:gap-1 md:divide-x md:divide-y-0">
-          <div className="space-y-4 px-4">
-            <p>+91 81692 06488</p>
+        <div className="grid gap-1 mb-8 grid-cols-2 divide-x divide-y-0">
+          <div className=" space-y-4 px-4 text-center sm:text-right">
+            <Link
+              href="tel:+918169206488"
+              className="text-muted-foreground font-medium hover:underline"
+            >
+              +91 81692 06488
+            </Link>
           </div>
-          <div className="space-y-4 px-4">
-            <p>+91 99675 07211</p>
+          <div className=" space-y-4 px-4 text-center sm:text-left">
+            <Link
+              href="tel:+918879500266"
+              className="text-muted-foreground font-medium hover:underline"
+            >
+              +91 88795 00266
+            </Link>
           </div>
-        </div> */}
+        </div>
+
         <span className="text-muted-foreground block text-center text-sm">
           {" "}
           © {new Date().getFullYear()} Ryukyukan, All rights reserved

@@ -13,7 +13,7 @@ const page = () => {
             <div className="space-y-8 p-4">
               <div className="space-y-2">
                 <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
-                  Ryukyukan
+                  Origins of Ryukyukan
                 </h3>
                 <p>
                   Ryukyukan is an internationally respected Okinawan karate
@@ -62,11 +62,11 @@ const page = () => {
 
       <section className="py-16 md:py-32">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
-          <div className="mx-auto max-w-xl space-y-6  md:space-y-10">
-            <h2 className="text-balance text-4xl text-center font-medium lg:text-5xl">
+          <div className="text-center">
+            <h2 className="text-balance text-4xl font-medium lg:text-5xl">
               Our Philosophy
             </h2>
-            <p className="text-justify">
+            <p className="text-muted-foreground mt-6 text-justify">
               We preserve the traditions of Okinawan Karate while promoting
               personal growth and discipline. Our art develops mind, body, and
               spirit through respect, perseverance, and humility. Karate is not
@@ -78,7 +78,7 @@ const page = () => {
           <img
             className="rounded-(--radius)"
             src="/about/hero_photo.jpg"
-            alt="team image"
+            alt="Ryukyukan Renshi & Hanshi"
             height=""
             width=""
             loading="lazy"

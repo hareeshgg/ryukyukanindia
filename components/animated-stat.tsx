@@ -22,7 +22,7 @@ export function AnimatedStat({
 
   return (
     <div ref={ref} className="font-medium text-7xl lg:text-8xl">
-      <NumberFlow value={start ? value : 9} suffix={suffix} />
+      <NumberFlow value={start ? value : 1000} suffix={suffix} />
     </div>
   );
 }

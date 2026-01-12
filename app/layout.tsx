@@ -17,8 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ryukyukan India",
-  description: "",
-  icons: "/ryukyukan_logo.png",
+  description:
+    "Ryukyukan India offers traditional Okinawan karate and Kobudo training in India, guided by experienced instructors and authentic lineage",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
