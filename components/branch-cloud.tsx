@@ -24,9 +24,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/gb-eng.png"
                   srcSet="https://flagcdn.com/h40/gb-eng.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/gb.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="England"
                 />
               </div>
 
@@ -35,9 +35,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/ua.png"
                   srcSet="https://flagcdn.com/h40/us.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/us.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="America"
                 />
               </div>
               <div className="flex">
@@ -45,9 +45,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/be.png"
                   srcSet="https://flagcdn.com/h40/be.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/be.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="Belgium"
                 />
               </div>
               <div className="flex">
@@ -55,9 +55,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/cl.png"
                   srcSet="https://flagcdn.com/h40/cl.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/cl.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="Chile"
                 />
               </div>
               <div className="flex">
@@ -65,9 +65,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/lk.png"
                   srcSet="https://flagcdn.com/h40/lk.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/lk.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="Sri Lanka"
                 />
               </div>
               <div className="flex">
@@ -75,9 +75,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/jp.png"
                   srcSet="https://flagcdn.com/h40/jp.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/jp.png 3x"
                   height="20"
-                  alt="Ukraine"
+                  alt="Japan"
                 />
               </div>
               <div className="flex">
@@ -85,9 +85,9 @@ const LogoCloud = () => {
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/in.png"
                   srcSet="https://flagcdn.com/h40/in.png 2x,
-    https://flagcdn.com/h60/ua.png 3x"
+    https://flagcdn.com/h60/in.png 3x"
                   height="40"
-                  alt="Ukraine"
+                  alt="India"
                 />
               </div>
             </InfiniteSlider>
