@@ -7,7 +7,6 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Programs", href: "/programs" },
   { name: "Branches", href: "/branches" },
-  // { name: "Events", href: "/events" },
   { name: "Gallery", href: "/gallery" },
   { name: "About", href: "/about" },
 ];
@@ -83,6 +82,7 @@ export default function FooterSection() {
           <div className=" space-y-4 px-4 text-center sm:text-right">
             <Link
               href="tel:+918169206488"
+              aria-label="contact info"
               className="text-muted-foreground font-medium hover:underline"
             >
               +91 81692 06488
@@ -91,6 +91,7 @@ export default function FooterSection() {
           <div className=" space-y-4 px-4 text-center sm:text-left">
             <Link
               href="tel:+918879500266"
+              aria-label="contact info"
               className="text-muted-foreground font-medium hover:underline"
             >
               +91 88795 00266

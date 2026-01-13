@@ -8,11 +8,13 @@ import { CldImage } from "next-cloudinary";
 export function EventImage({
   src,
   alt,
+  size,
   onClick,
 }: {
   src: string;
   alt: string;
-  onClick: () => void;
+  size: string;
+  onClick?: () => void;
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -37,7 +39,7 @@ export function EventImage({
          33vw"
         loading="lazy"
         onLoad={() => setLoaded(true)}
-        className={`h-48 w-full object-cover transition-all duration-500 ${
+        className={`${size} w-full object-cover transition-all duration-500 ${
           loaded ? "blur-0 scale-100" : "blur-md scale-105"
         }`}
       />

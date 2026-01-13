@@ -1,4 +1,4 @@
-import TeamSection from "@/components/team";
+import { EventImage } from "@/components/EventImage";
 
 const page = () => {
   return (
@@ -60,7 +60,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-32">
+      <section className="py-16 md:py-24">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
           <div className="text-center">
             <h2 className="text-balance text-4xl font-medium lg:text-5xl">
@@ -86,7 +86,74 @@ const page = () => {
         </div>
       </section>
 
-      <TeamSection />
+      <section className="pb-16 pt-8 dark:bg-transparent">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-balance text-center text-3xl font-bold md:text-4xl lg:text-5xl pt-8">
+            Our Mission
+          </h2>
+          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 mt-12">
+            <div className="order-last md:order-first">
+              <EventImage src="rs_6_ouuhrp" size="h-56" alt="Nvidia Logo" />
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
+                Purpose
+              </h3>
+              <p>
+                Ryukyukan India is committed to maintaining the integrity of
+                traditional martial arts while adapting instruction responsibly
+                for modern practitioners.
+              </p>
+              <p>
+                Our focus remains on authentic technique, discipline, and
+                long-term development rather than short-term competition
+                results.
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 mt-12">
+            <div className="space-y-2">
+              <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
+                Student Development
+              </h3>
+              <p>
+                Ryukyukan India emphasizes disciplined training that builds
+                strong fundamentals, character, and respect through consistent,
+                traditional practice.
+              </p>
+              <p>
+                Students are guided toward long-term personal growth, developing
+                focus, confidence, and responsibility beyond physical technique
+                or competitive achievement.
+              </p>
+            </div>
+            <div>
+              <EventImage src="sh_8_w2njaw" size="h-56" alt="Nvidia Logo" />
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 mt-12">
+            <div className="order-last md:order-first">
+              <EventImage src="kc23_09_g3uqvz" size="h-56" alt="Nvidia Logo" />
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
+                Core Values
+              </h3>
+              <p>
+                Ryukyukan India upholds respect, discipline, and integrity,
+                ensuring traditional principles guide every aspect of
+                instruction and conduct.
+              </p>
+              <p>
+                Training fosters humility, perseverance, and responsibility,
+                shaping practitioners who value continuous improvement over
+                recognition or short-term success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

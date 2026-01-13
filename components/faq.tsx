@@ -102,7 +102,7 @@ export default function FAQs() {
           <p className="text-center text-muted-foreground mt-6 px-8">
             Can't find what you're looking for?{" "}
             <Link
-              href="tel:+919967507211"
+              href="tel:+98169206488"
               className="text-white font-medium hover:underline"
             >
               Click to contact us.

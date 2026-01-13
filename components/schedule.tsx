@@ -1,5 +1,4 @@
 import { Calendar, Clock } from "lucide-react";
-import Image from "next/image";
 
 export default function Schedule() {
   const dojos = [
@@ -95,9 +94,8 @@ export default function Schedule() {
               </div>
             </div>
 
-            {/* map */}
             <div className="relative">
-              <div className="relative aspect-[67/34] rounded-2xl overflow-hidden border">
+              <div className="relative aspect-67/34 rounded-2xl overflow-hidden border">
                 <iframe
                   src={dojo.map}
                   loading="lazy"

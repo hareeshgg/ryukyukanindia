@@ -118,6 +118,7 @@ export default function Page() {
                   src={src}
                   alt={`${event.name} image ${imgIndex + 1}`}
                   onClick={() => setActiveImage(src)}
+                  size="h-48"
                 />
               ))}
             </div>
