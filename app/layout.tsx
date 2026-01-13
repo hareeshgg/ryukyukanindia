@@ -16,11 +16,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ryukyukan India",
+  title: {
+    default: "Ryukyukan India | Traditional Okinawan Karate",
+    template: "%s | Ryukyukan India",
+  },
   description:
-    "Ryukyukan India offers traditional Okinawan karate and Kobudo training in India, guided by experienced instructors and authentic lineage",
+    "Ryukyukan India is a traditional Okinawan Karate organization promoting authentic martial arts training, discipline, and self-defense across India.",
   icons: {
     icon: "/logo.png",
+  },
+  keywords: [
+    "Ryukyukan India",
+    "Ryukyukan Karate",
+    "Shorinryu Karate India",
+    "Okinawan Karate India",
+    "Traditional Karate India",
+    "Martial Arts India",
+  ],
+  authors: [{ name: "Ryukyukan India" }],
+  metadataBase: new URL("https://ryukyukan-india.com"),
+  openGraph: {
+    title: "Ryukyukan India | Traditional Okinawan Karate",
+    description:
+      "Official Ryukyukan India website – preserving authentic Okinawan Karate traditions.",
+    url: "https://ryukyukan-india.com",
+    siteName: "Ryukyukan India",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

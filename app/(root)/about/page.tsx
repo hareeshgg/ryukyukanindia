@@ -1,4 +1,11 @@
 import { EventImage } from "@/components/EventImage";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Ryukyukan India",
+  description:
+    "Learn about the history, philosophy, lineage, and instructors of Ryukyukan India, dedicated to authentic Okinawan karate in India.",
+};
 
 const page = () => {
   return (

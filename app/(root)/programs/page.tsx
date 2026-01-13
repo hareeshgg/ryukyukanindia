@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link, ChevronRight } from "lucide-react";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Training Programs at Ryukyukan India",
+  description:
+    "Explore karate kumite, foundational karate training, and traditional kobudo programs offered by Ryukyukan India.",
+};
+
 const page = () => {
   const programs = [
     {
@@ -53,6 +61,13 @@ const page = () => {
             <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
               Training Program
             </h2>
+            <p className="text-muted-foreground mt-6">
+              Ryukykan India offers structured training programs rooted in
+              traditional Okinawan martial arts. Each program is designed to
+              develop technical skill, discipline, and understanding of
+              authentic karate practice, guided by experienced instructors and
+              established training principles.
+            </p>
           </div>
           <div className="space-y-6 mt-8">
             {programs.map((program, index) => (

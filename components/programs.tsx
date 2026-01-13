@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
+import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 import * as React from "react";
 
@@ -11,18 +12,21 @@ export default function Programs() {
       description:
         "A striking martial art developing discipline, power, precision, and self-defense skills.",
       img: "/programs/kata.jpg",
+      link: "/programs/#karate",
     },
     {
       title: "Kumite",
       description:
         "Sparring practice where karate practitioners apply techniques dynamically against resisting opponents.",
       img: "/programs/kumite.png",
+      link: "/programs/#kumite",
     },
     {
       title: " Kobudo",
       description:
         "Okinawan weapon art preserving traditional techniques using bo, sai, and tonfa.",
       img: "/programs/kobudo.png",
+      link: "/programs/#kobudo",
     },
   ];
   return (
@@ -45,6 +49,7 @@ export default function Programs() {
                 key={card.title + index}
                 title={card.title}
                 description={card.description}
+                link={card.link}
               >
                 {/* default child: small visual/icon placeholder — replace with an actual icon if you want */}
 
@@ -66,12 +71,12 @@ const IntegrationCard = ({
   title,
   description,
   children,
-  link = "https://github.com/meschacirung/cnblocks",
+  link,
 }: {
   title: string;
   description: string;
   children: React.ReactNode;
-  link?: string;
+  link: Url;
 }) => {
   return (
     <Card className="p-6">
