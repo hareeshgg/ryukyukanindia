@@ -33,7 +33,7 @@ const members = [
   },
   {
     name: "Hareesh Gurung",
-    role: "Senpei - Shodan",
+    role: "Senpai - Shodan",
     avatar: "/team/hareesh.png",
     link: "#",
   },
