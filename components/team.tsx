@@ -10,31 +10,31 @@ const members = [
   {
     name: "Padma Bhushan Mishra",
     role: "Renshi - Technical Director, India",
-    avatar: "/team/renshi.png",
+    avatar: "/team/renshi.PNG",
     link: "#",
   },
   {
     name: "Rochit Mishra",
     role: "Sensei - Nidan",
-    avatar: "/team/rochit.png",
+    avatar: "/team/rochit.PNG",
     link: "#",
   },
   {
     name: "Manav Gavde",
     role: "Sensei - Nidan",
-    avatar: "/team/manav.png",
+    avatar: "/team/manav.PNG",
     link: "#",
   },
   {
     name: "Abhijit Nair",
     role: "Sensei - Nidan",
-    avatar: "/team/abhijit.png",
+    avatar: "/team/abhijit.PNG",
     link: "#",
   },
   {
     name: "Hareesh Gurung",
     role: "Senpai - Shodan",
-    avatar: "/team/hareesh.png",
+    avatar: "/team/hareesh.PNG",
     link: "#",
   },
 ];
