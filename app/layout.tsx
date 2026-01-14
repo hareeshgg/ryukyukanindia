@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Ryukyukan India is a traditional Okinawan Karate organization promoting authentic martial arts training, discipline, and self-defense across India.",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.ico",
   },
   keywords: [
     "Ryukyukan India",

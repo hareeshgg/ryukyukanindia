@@ -16,7 +16,7 @@ export default function ContentSection_2() {
         <img
           className="rounded-(--radius)"
           src="/home/shuri.jpg"
-          alt="team image"
+          alt="Shuri Castle in Okinawa, the birthplace of Karate"
           height=""
           width=""
           loading="lazy"

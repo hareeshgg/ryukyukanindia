@@ -31,8 +31,8 @@ export default function Schedule() {
       name: "RBK International School",
       location: "Chembur, Mumbai",
       description: "Advanced karate and kumite training",
-      days: ["Saturday", "Sunday"],
-      time: ["4:00 PM - 5:30 PM", "4:00 PM - 5:30 PM"],
+      days: ["Friday", "Saturday", "Sunday"],
+      time: ["4:00pm - 5:50pm", "9:00 AM - 10:30 AM", "9:00 AM - 10:30 AM"],
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0357313539453!2d72.91102647518791!3d19.062166552406715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c617a31ab63b%3A0x3d15d6dd7540ac7c!2sKanakia%20International%20School%20(IB%20and%20CBSE)%20-%20Chembur%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1766066467192!5m2!1sen!2sin",
     },
   ];

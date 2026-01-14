@@ -12,7 +12,11 @@ const page = () => {
     <>
       <section className="pb-16 pt-8 dark:bg-transparent">
         <div className="mx-auto max-w-5xl px-6">
-          <img src="/about/about.jpeg" className="w-full h-auto rounded-lg" />
+          <img
+            src="/about/about.jpeg"
+            className="w-full h-auto rounded-lg"
+            alt="Ryukyukan India students"
+          />
           <h2 className="text-balance text-center text-3xl font-bold md:text-4xl lg:text-5xl pt-8">
             About Us
           </h2>
@@ -62,6 +66,7 @@ const page = () => {
             <img
               src="/about/about-hr.jpeg"
               className="size-full rounded-md object-cover object-top"
+              alt="Ryukyukan Renshi & Hanshi Nohara"
             />
           </div>
         </div>
@@ -85,7 +90,7 @@ const page = () => {
           <img
             className="rounded-(--radius)"
             src="/about/hero_photo.jpg"
-            alt="Ryukyukan Renshi & Hanshi"
+            alt="Ryukyukan Seminar Training under Hanshi Nohara"
             height=""
             width=""
             loading="lazy"

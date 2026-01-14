@@ -116,9 +116,6 @@ export const HeroHeader = () => {
                   variant="secondary"
                   size="lg"
                   className="gap-1 pr-2 shadow-none hidden md:flex"
-                  onClick={() => {
-                    setMenuState(!menuState);
-                  }}
                 >
                   <Link href="/#enroll">
                     Book a Free Trial

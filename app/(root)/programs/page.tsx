@@ -40,7 +40,7 @@ const page = () => {
       img: "/programs/kumite.png",
     },
     {
-      title: " Kobudo",
+      title: "Kobudo",
       description:
         "Kobudo is a traditional martial art that focuses on the use of classical Okinawan weapons such as the bo, sai, tonfa, and nunchaku. It emphasizes precision, balance, and coordination while preserving ancient techniques and cultural heritage. Kobudo training enhances body mechanics and deepens a practitioner’s understanding of distance, rhythm, and control.",
       benefits: [
@@ -71,14 +71,14 @@ const page = () => {
           </div>
           <div className="space-y-6 mt-8">
             {programs.map((program, index) => (
-              <div
+              <Card
                 key={index}
                 id={program.title.toLowerCase().replace(/\s+/g, "-")}
-                className="grid gap-8 rounded-xl border border-white/10 p-6 md:grid-cols-2 md:items-center"
+                className="grid gap-8 p-8 md:grid-cols-2"
               >
                 {/* Text Content */}
                 <div className="space-y-4">
-                  <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
+                  <h3 className="mt-4 text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
                     {program.title}
                   </h3>
 
@@ -99,12 +99,12 @@ const page = () => {
                 <div className="relative overflow-hidden rounded-lg">
                   <img
                     src={program.img}
-                    alt={program.title}
+                    alt={`Ryukyukan ${program.title}`}
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>

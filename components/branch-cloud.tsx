@@ -13,13 +13,6 @@ const LogoCloud = () => {
           <div className="relative py-6 md:w-[calc(100%-11rem)]">
             <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
               <div className="flex">
-                {/* <img
-                  className="mx-auto h-10 w-fit dark:invert"
-                  src="https://flagpedia.net/data/flags/w1160/us.webp"
-                  alt="Nvidia Logo"
-                  height="20"
-                  width="auto"
-                /> */}
                 <img
                   className="mx-auto h-10 w-fit dark:invert"
                   src="https://flagcdn.com/h20/gb-eng.png"

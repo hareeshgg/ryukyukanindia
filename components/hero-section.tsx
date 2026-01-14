@@ -63,7 +63,7 @@ export default function HeroSection() {
           <img
             className="-z-50 ml-auto h-200 xl:h-auto object-cover absolute inset-0 size-full opacity-25 blur-[2px]"
             src="/home/hero-section.jpeg"
-            alt="Ryukyukan India Instructors"
+            alt="Ryukyukan India Instructors with Hanshi Nohara"
             height="4000"
             width="3000"
           />

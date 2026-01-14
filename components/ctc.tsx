@@ -190,14 +190,18 @@ export default function CallToAction() {
                       </SelectTrigger>
 
                       <SelectContent>
-                        <SelectItem value="hccs">
+                        <SelectItem value="Holy Cross - Mira Road">
                           Holy Cross School, Mira Road
                         </SelectItem>
-                        <SelectItem value="pgvora">
+                        <SelectItem value="PG Vora - Mira Road">
                           PG Vora, Mira Road
                         </SelectItem>
-                        <SelectItem value="rbkc">RBK, Chembur</SelectItem>
-                        <SelectItem value="rbkb">RBK, Bhayandar</SelectItem>
+                        <SelectItem value="RBK - Bhayandar">
+                          RBK, Bhayandar
+                        </SelectItem>
+                        <SelectItem value="RBK - Chembur">
+                          RBK, Chembur
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -222,10 +226,6 @@ export default function CallToAction() {
                   "Book A Free Trial"
                 )}
               </span>
-              {/* <SendHorizonal
-                className="relative mx-auto size-5 md:hidden text-black"
-                strokeWidth={2}
-              /> */}
             </Button>
           </form>
         </div>
