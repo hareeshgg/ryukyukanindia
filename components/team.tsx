@@ -4,7 +4,7 @@ const members = [
   {
     name: "Koei Nohara",
     role: "Hanshi - President of Ryukyukan",
-    avatar: "/team/hanshi.jpg",
+    avatar: "/team/hanshi.webp",
     link: "#",
   },
   {
