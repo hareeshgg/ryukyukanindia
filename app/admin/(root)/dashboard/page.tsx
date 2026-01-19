@@ -4,7 +4,7 @@ const page = () => {
   return (
     <>
       <AdminNavbar />
-      <div className="text-center">dashboard</div>
+      <div className="text-center">Dashboard</div>
     </>
   );
 };
