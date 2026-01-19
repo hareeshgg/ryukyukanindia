@@ -29,7 +29,7 @@ export const AdminNavbar = () => {
 
   const { session, signOut } = UserAuth();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setLoading(true);
 

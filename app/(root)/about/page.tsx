@@ -36,13 +36,13 @@ const page = () => {
                   powerful international fighting teams.
                 </p>
                 <p>
-                  Ryukyukan is led by Koei Nohara, Hanshi (10th Degree Black
-                  Belt), a highly respected Okinawan Shorinryu karate master.
-                  The organization maintains a direct lineage to original
-                  Okinawan karate through two legendary figures: Chosin Chibana
-                  & Chotoku Kyan This lineage ensures Ryukyukan’s techniques,
-                  philosophy, and training methods remain faithful to classical
-                  Okinawan karate.
+                  Ryukyukan is led by Koei Nohara, Hanshi (10th Dan Black Belt),
+                  a highly respected Okinawan Shorinryu karate master. The
+                  organization maintains a direct lineage to original Okinawan
+                  karate through two legendary figures: Chosin Chibana & Chotoku
+                  Kyan This lineage ensures Ryukyukan’s techniques, philosophy,
+                  and training methods remain faithful to classical Okinawan
+                  karate.
                 </p>
               </div>
               <div className="space-y-2">
