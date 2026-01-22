@@ -1,5 +1,6 @@
 import { EventImage } from "@/components/EventImage";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Ryukyukan India",
@@ -105,7 +106,13 @@ const page = () => {
           </h2>
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 mt-12">
             <div className="order-last md:order-first">
-              <EventImage src="rs_6_ouuhrp" size="h-56" alt="Nvidia Logo" />
+              <Image
+                src="/about/pur.jpeg"
+                className="h-56 w-full object-cover rounded-lg"
+                height={900}
+                width={900}
+                alt="Rochit Mishra Ryukyuan Sensei"
+              />
             </div>
             <div className="space-y-4">
               <h3 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
@@ -140,12 +147,24 @@ const page = () => {
               </p>
             </div>
             <div>
-              <EventImage src="sh_8_w2njaw" size="h-56" alt="Nvidia Logo" />
+              <Image
+                src="/about/dev.jpeg"
+                className="h-56 w-full object-cover rounded-lg"
+                height={900}
+                width={900}
+                alt="Ryukyukan India student"
+              />
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 mt-12">
             <div className="order-last md:order-first">
-              <EventImage src="kc23_09_g3uqvz" size="h-56" alt="Nvidia Logo" />
+              <Image
+                src="/about/value.jpg"
+                className="h-56 w-full object-cover rounded-lg"
+                height={900}
+                width={900}
+                alt="Ryukyukan India Seminar"
+              />
             </div>
 
             <div className="space-y-4">

@@ -10,6 +10,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { SwiperSlide } from "swiper/react";
 import { Swiper } from "swiper/react";
 import { supabase } from "@/lib/lib";
+import { SkeletonCard } from "@/components/gallery-skeleton";
 
 type GalleryProps = {
   id: number;
@@ -45,9 +46,9 @@ export default function Page() {
     fetchGallery();
   }, []);
 
-  if (loading) return <div className="py-20 text-center">Loading gallery…</div>;
+  if (loading) return <SkeletonCard />;
   if (!events.length)
-    return <div className="py-20 text-center">No events yet</div>;
+    return <div className="py-20 text-center h-screen">No events yet</div>;
   return (
     <section className="py-16">
       <div className="mx-auto max-w-5xl px-6 space-y-24">
